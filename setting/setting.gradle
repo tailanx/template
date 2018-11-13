@@ -1,0 +1,7 @@
+ext{
+    def rxjavaversion = "2.1.12"
+    dependencies = [
+            libRxJava : "io.reactivex.rxjava2:rxjava:$rxjavaversion",
+    ]
+
+}
