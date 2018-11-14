@@ -18,7 +18,7 @@ import com.template.liuyong.templateproject.R;
  * @changeauthor 修改人
  */
 public class SecondActivity extends Activity {
-    
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
