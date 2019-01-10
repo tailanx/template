@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="evergrande.lightapp.jianq.com.module_center" >
+    <application android:name=".CenterAppliation">
+        <application>
+            <activity android:name=".ui.CenterActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+            </activity>
+        </application>
+    </application>
+</manifest>

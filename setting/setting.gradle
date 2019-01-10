@@ -1,7 +1,44 @@
 ext{
+    //判断是用module加载还是用 true 表示是module ，false 表示不是module
+    isModule = true
+    compileSdkVersion = 28
+    debugApplicationId = "com.template.liuyong.templateproject"
+
+    testApplicationId  = "com.template.liuyong.module_testone"
+    homeApplicationId  = "com.template.liuyong.module_home"
+    centerApplicationId = "com.template.liuyong.module_center"
+    minSdkVersion = 15
+    targetSdkVersion  =28
+    versionCode = 1
+    versionName = "1.0"
+
     def rxjavaversion = "2.1.12"
+    def supportversion = "28.0.0"
+    def constraintversion = "1.1.3"
+    def routerversion = "1.4.1"
+    def router_compiler ="1.2.2"
+    def butterknifeversion = "8.4.0"
+    def daggerVersion = "2.12"
+    def retrofitVersion = "2.1.0"
+    def rxjavaVersion = "2.1.12"
+    def rxandroidVersion = "2.0.2"
+    def okhttpVersion = "3.7.0"
+    def logginginterceptorVersion = "3.4.1"
+    def convertergsonVersion = "2.1.0"
+    def adapterRxjavaVersion  ="2.2.0"
+    def daggercompilerVersion  ="2.12"
+
     dependencies = [
             libRxJava : "io.reactivex.rxjava2:rxjava:$rxjavaversion",
+            libsupport : "com.android.support:appcompat-v7:$supportversion",
+            libconstraint :  "com.android.support.constraint:constraint-layout:$constraintversion",
+            librouter : "com.alibaba:arouter-api:$routerversion",
+            librouter_compiler : "com.alibaba:arouter-compiler:$router_compiler",
+            libbutterknife : "com.jakewharton:butterknife:$butterknifeversion",
+            libbutterknifecompiler: "com.jakewharton:butterknife-compiler:$butterknifeversion",
+            libdagger : "com.google.dagger:dagger:$daggerVersion",
+            libDaggerCompiler :"com.google.dagger:dagger-compiler:$daggercompilerVersion",
+
     ]
 
 }

@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.template.liuyong.templateproject.R;
-
 /**
  * @author 创建人 liuyong
  * @project 项目名称 TemplateProject
@@ -27,13 +25,14 @@ public class SecondActivity extends Activity {
             @Override
             public void onClick(View view) {
                 SecondActivity.this.finish();
+                setResult(10000);
             }
         });
     }
 
     @Override
     public void finish() {
-        setResult(100000);
+        setResult(10000);
         super.finish();
     }
 }
