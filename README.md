@@ -15,8 +15,10 @@ findViewById(R.id.tv_startActivityforResult).setOnClickListener(new View.OnClick
             }
         });
 ```
-2.使用EasyPermission来申请6.0(SDK>=23)的权限问题.
-3.使用rxlifecycle来防止使用rxjava导致的内存泄露问题.
+************************************************************************************
+2.使用EasyPermission来申请6.0(SDK>=23)的权限问题。
+************************************************************************************
+3.使用rxlifecycle来防止使用rxjava导致的内存泄露问题。
 ```
 Observable.timer(DEALAYTIME, TimeUnit.SECONDS).subscribeOn(Schedulers.io()).
                 compose(this.<Long>bindToLifecycle()).observeOn(AndroidSchedulers.mainThread())
