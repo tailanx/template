@@ -21,7 +21,6 @@ android {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
-
     }
 
     buildTypes {
@@ -30,6 +29,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     sourceSets{
         main{
             if(!Boolean.valueOf(isModule)){
@@ -41,7 +41,6 @@ android {
                     exclude '**/**/debug/**'
                 }
             }
-
         }
     }
 

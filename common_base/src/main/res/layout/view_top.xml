@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dis_50"
+        android:background="@color/color_b10"
+        android:layout_marginTop="@dimen/dis_25">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="@dimen/dis_50"
+            android:layout_height="@dimen/dis_50"
+            android:src="@drawable/nav_back"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/home_vadio"
+            android:textColor="@color/color_b2"
+            android:textSize="@dimen/dis_14sp"/>
+
+        <TextView
+            android:id="@+id/title_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/change_layout"
+            android:visibility="gone"
+            android:textColor="@color/color_b2"
+            android:textSize="@dimen/dis_14sp"
+            />
+        <ImageView
+            android:id="@+id/title_right_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:text="button"
+            />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,6 +1,12 @@
 package evergrande.lightapp.jianq.com.module_center.ui;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+
 import com.template.liuyong.common_base.ui.BaseActivity;
+import com.template.liuyong.common_base.ui.BaseFragment;
+import com.template.liuyong.common_base.util.ARouterConfiger;
+import com.template.liuyong.common_base.util.ARouterUtil;
 
 import evergrande.lightapp.jianq.com.module_center.R;
 
@@ -15,6 +21,8 @@ import evergrande.lightapp.jianq.com.module_center.R;
  * @changeauthor 修改人
  */
 public class CenterActivity extends BaseActivity {
+    BaseFragment baseFragment = ARouterUtil.getFragment(ARouterConfiger.CENTERMENU);
+
     @Override
     public int getView() {
         return R.layout.activity_center;
@@ -22,6 +30,9 @@ public class CenterActivity extends BaseActivity {
 
     @Override
     public void initView() {
-
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(R.id.ft_content,baseFragment);
+        ft.commit();
     }
 }

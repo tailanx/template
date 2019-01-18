@@ -1,11 +1,13 @@
 package com.template.liuyong.templateproject;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.orhanobut.logger.Logger;
 import com.template.liuyong.common_base.ui.BaseActivity;
 import com.template.liuyong.common_base.ui.BaseFragment;
 import com.template.liuyong.common_base.util.ARouterConfiger;
@@ -24,10 +26,13 @@ import butterknife.OnClick;
  * @changetime 修改时间
  * @changeauthor 修改人
  */
-
+@Route(path = ARouterConfiger.MAINACTIITY)
 public class MainActivity extends BaseActivity {
+
     @BindView(R.id.rg_group)
     public RadioGroup radioGroup;
+    @BindView(R.id.rb_main)
+    public RadioButton rdMain;
     private FragmentManager fragmentManager;
     /**foodFragment*/
     private BaseFragment foodFragment = ARouterUtil.getFragment(ARouterConfiger.FOODMENU);
@@ -35,18 +40,16 @@ public class MainActivity extends BaseActivity {
     private BaseFragment centerFragment = ARouterUtil.getFragment(ARouterConfiger.CENTERMENU);
     /**mefragment*/
     private BaseFragment meFragment = ARouterUtil.getFragment(ARouterConfiger.MEMENU);
-
-
     @Override
     public int getView() {
         return R.layout.activity_main;
     }
 
+
     @Override
     public void initView() {
-        fragmentManager = getSupportFragmentManager();
-        findViewById(R.id.rb_me).setSelected(true);
-        showFragment(foodFragment);
+        fragmentManager = getFragmentManager();
+        onRadioButtonClicked(rdMain);
 
     }
 
@@ -81,7 +84,6 @@ public class MainActivity extends BaseActivity {
         if(null != fragment){
             ft.replace(R.id.fl_main_content,fragment);
         }
-        ft.addToBackStack(fragment.getClass().getSimpleName());
         ft.commit();
 
     }

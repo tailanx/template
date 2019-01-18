@@ -2,10 +2,6 @@
     package="com.template.liuyong.module_testone" >
     <application>
         <activity android:name=".ui.MeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
     </application>

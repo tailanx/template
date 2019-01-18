@@ -1,6 +1,6 @@
 ext{
     //判断是用module加载还是用 true 表示是module ，false 表示不是module
-    isModule = true
+    isModule = false
     compileSdkVersion = 28
     debugApplicationId = "com.template.liuyong.templateproject"
 
@@ -20,15 +20,21 @@ ext{
     def butterknifeversion = "8.4.0"
     def daggerVersion = "2.12"
     def retrofitVersion = "2.1.0"
-    def rxjavaVersion = "2.1.12"
     def rxandroidVersion = "2.0.2"
     def okhttpVersion = "3.7.0"
     def logginginterceptorVersion = "3.4.1"
     def convertergsonVersion = "2.1.0"
     def adapterRxjavaVersion  ="2.2.0"
     def daggercompilerVersion  ="2.12"
+    def orhanobutloggerVersion = "1.15"
+    def easyPermissionVersion = "2.0.0"
+    def bindToLifeCycleVersion = "2.1.0"
+    def javaxVersion  = "1.2"
+    def lombokVersion = "1.16.6"
+
 
     dependencies = [
+
             libRxJava : "io.reactivex.rxjava2:rxjava:$rxjavaversion",
             libsupport : "com.android.support:appcompat-v7:$supportversion",
             libconstraint :  "com.android.support.constraint:constraint-layout:$constraintversion",
@@ -38,6 +44,24 @@ ext{
             libbutterknifecompiler: "com.jakewharton:butterknife-compiler:$butterknifeversion",
             libdagger : "com.google.dagger:dagger:$daggerVersion",
             libDaggerCompiler :"com.google.dagger:dagger-compiler:$daggercompilerVersion",
+            liborhanobutlogger :"com.orhanobut:logger:$orhanobutloggerVersion",
+            libeasyPermission :"pub.devrel:easypermissions:$easyPermissionVersion",
+
+            libDagger :"com.google.dagger:dagger:$daggerVersion",
+            libRetrofit : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            libRxAndroid : "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
+            libOkhttp : "com.squareup.okhttp3:okhttp:$okhttpVersion",
+            libLoggingInterceptor : "com.squareup.okhttp3:logging-interceptor:$logginginterceptorVersion",
+            libConvertergson : "com.squareup.retrofit2:converter-gson:$convertergsonVersion",
+            libAdapterRxJava : "com.squareup.retrofit2:adapter-rxjava2:$adapterRxjavaVersion",
+            libDaggerCompiler : "com.google.dagger:dagger-compiler:$daggercompilerVersion",
+            libbindToLifeCycle : "com.trello.rxlifecycle2:rxlifecycle-components:$bindToLifeCycleVersion",
+            libbindToLifeNavi : "com.trello.rxlifecycle2:rxlifecycle-navi:$bindToLifeCycleVersion",
+            libRecyclerview : "com.android.support:recyclerview-v7:$supportversion",
+
+            libLombokJavax       : "javax.annotation:javax.annotation-api:$javaxVersion",
+            libLombok        : "org.projectlombok:lombok:$lombokVersion",
+
 
     ]
 

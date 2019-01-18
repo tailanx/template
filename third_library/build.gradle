@@ -41,8 +41,25 @@ dependencies {
     api  implementations.librouter
     api  implementations.libdagger
     api  implementations.libbutterknife
+    api  implementations.liborhanobutlogger
+    api implementations.libeasyPermission
+    api implementations.libDagger
+    api implementations.libRetrofit
+    api implementations.libRxAndroid
+    api implementations.libOkhttp
+    api implementations.libLoggingInterceptor
+    api implementations.libConvertergson
+    api implementations.libAdapterRxJava
+    api implementations.libbindToLifeCycle
+    api implementations.libbindToLifeNavi
+    api implementations.libRecyclerview
+//    api implementations.libLombokJavax
+//    api implementations.libLombok
+
 
     annotationProcessor  implementations.librouter_compiler
     annotationProcessor  implementations.libDaggerCompiler
     annotationProcessor  implementations.libbutterknifecompiler
+    annotationProcessor implementations.libDaggerCompiler
+
 }

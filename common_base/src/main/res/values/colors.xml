@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ffffff</color>
-    <color name="colorPrimaryDark">#ffffff</color>
-    <color name="colorAccent">#ffffff</color>
+    <color name="colorPrimary">#ffff00</color>
+    <color name="colorPrimaryDark">#ffff00</color>
+    <color name="colorAccent">#ffff00</color>
     <color name="color_b1">#000000</color>
     <color name="color_b2">#ffffff</color>
     <color name="color_b3">#FD7575</color>
@@ -20,4 +20,5 @@
     <color name="recycler_color2">#edd36a</color>
     <color name="recycler_color3">#82c1f9</color>
     <color name="recycler_color4">#68d661</color>
+    <color name="apla_background">#33b6b6b6</color>
 </resources>

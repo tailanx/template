@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">智能菜谱</string>
     <string name="home_main">菜谱</string>
-    <string name="home_vadio">视频</string>
+    <string name="home_vadio">设计</string>
     <string name="home_friend">朋友</string>
     <string name="home_my">我</string>
     <string name="shared_suc">分享成功啦</string>
@@ -32,4 +32,15 @@
     <string name="go_to_ready">准备好</string>
     <string name="go_to_error">播放出错</string>
     <string name="user_center">个人中心</string>
+    <string name="denited_permission">权限已经被您拒绝了</string>
+    <string name="denited_content">如果不打开权限则无法使用该功能,点击确定去打开权限</string>
+    <string name="grant_permission">使用App需要申请的权限</string>
+
+    <string name="default_tip">默认提示语</string>
+    <string name="change_layout">切换布局</string>
+    <string name="design_pattern">设计模式</string>
+    <string name="design_philosophy">设计原则:\n 1 将变化的提取出来.封装起来。\n2 针对接口编程，不针对具体的实现。\n3 多用组合，少用继承。
+        \n4 针对交互对象之间的耦合设计。\n5 对扩展开发，对修改关闭。\n6 依赖抽象，而不依赖具体的类 </string>
+
+    <string name="pattern_strategy">策略模式</string>
 </resources>

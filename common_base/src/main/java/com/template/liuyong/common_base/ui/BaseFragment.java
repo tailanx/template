@@ -1,11 +1,11 @@
 package com.template.liuyong.common_base.ui;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +13,9 @@ import android.view.ViewStub;
 import android.widget.FrameLayout;
 
 import com.template.liuyong.common_base.R;
+
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * @author 创建人 liuyong
@@ -27,7 +30,8 @@ import com.template.liuyong.common_base.R;
 public  abstract  class BaseFragment extends Fragment {
     protected Activity activity;
     private ViewStub viewStub;
-    private View view;
+    protected View view;
+    private Unbinder unbinder;
 
     @Override
     public void onAttach(Context context) {
@@ -38,8 +42,10 @@ public  abstract  class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.activity_toolbar,container,false);
+        view = inflater.inflate(R.layout.fragment_base,container,false);
         ((FrameLayout)view.findViewById(R.id.fm_activity)).addView(inflater.inflate(resview(),null));
+        unbinder = ButterKnife.bind(this,view);
+        initView();
         return view  ;
     }
 
@@ -60,5 +66,12 @@ public  abstract  class BaseFragment extends Fragment {
     }
 
 
-
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if(null != unbinder){
+            unbinder.unbind();
+            unbinder = null;
+        }
+    }
 }

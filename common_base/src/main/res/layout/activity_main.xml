@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +25,7 @@
             <RadioButton
                 android:id="@+id/rb_main"
                 style="@style/home_main_viewgroup"
-                android:text="@string/home_main" />
+                android:text="@string/home_main"/>
             <View
                 android:layout_width="@dimen/dis_1"
                 android:layout_height="match_parent"/>

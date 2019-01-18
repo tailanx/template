@@ -1,43 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/tb_activity"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:fitsSystemWindows="true"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:visibility="gone"
-        app:layout_constraintRight_toRightOf="parent">
+    <include
+        layout="@layout/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/tx_title"
-            android:layout_width="wrap_content"
-            android:textSize="18sp"
-            android:textColor="@color/color_b2"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+    <FrameLayout
+        android:id="@+id/fm_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    </android.support.v7.widget.Toolbar>
+    </FrameLayout>
     <ViewStub
         android:id="@+id/vs_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout="@layout/view_empty"
         />
-
-
-    <FrameLayout
-        android:id="@+id/fm_activity"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tb_activity">
-
-    </FrameLayout>
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

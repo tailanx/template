@@ -26,4 +26,21 @@ public interface ARouterConfiger {
      */
     String CENTERMENU = "/center/CenterFragment";
 
+    /**
+     * 设计模式页面
+     */
+    String PATTERN_ACTIVITY = "/center/PatternActivity";
+
+    /**
+     * 策略模式
+     */
+    String STRAREGY_PATTERN = "/center/StrategyPatternActivity";
+
+    /**
+     * 主页面
+     */
+    String MAINACTIITY = "/app/MainActivity";
+
+
+
 }
