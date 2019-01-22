@@ -1,6 +1,7 @@
 package com.template.liuyong.common_base.util;
 
 import android.content.Context;
+import android.content.Intent;
 
 import com.template.liuyong.common_base.bean.CrashBean;
 
@@ -50,7 +51,7 @@ public class UncatchExceptionimpl implements UnCatchException<CrashBean>, Thread
 
     @Override
     public void showMsg(CrashBean crashBean) {
-
+//        ARouterUtil.getActivity(ARouterConfiger.ACTIVITY_CRASH);
     }
 
     @Override

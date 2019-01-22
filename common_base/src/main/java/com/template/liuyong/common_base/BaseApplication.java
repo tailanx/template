@@ -23,6 +23,7 @@ public class BaseApplication extends Application {
         super.onCreate();
         initRouter();
         initLogger();
+        //添加自定义异常补捉
         UncatchExceptionimpl.getInstance().init(this);
     }
 

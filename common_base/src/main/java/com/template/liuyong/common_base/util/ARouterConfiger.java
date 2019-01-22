@@ -42,6 +42,11 @@ public interface ARouterConfiger {
     String ACTIVITY_TEST= "/test/Activity";
 
     /**
+     * crash页面
+     */
+    String ACTIVITY_CRASH = "/crash/Activity";
+
+    /**
      * 主页面
      */
     String MAINACTIITY = "/app/MainActivity";

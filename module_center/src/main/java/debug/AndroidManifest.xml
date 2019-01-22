@@ -16,5 +16,6 @@
             <activity android:name=".ui.PatternActivity"/>
             <activity android:name=".ui.StrategyPatternActivity"/>
             <activity android:name=".ui.TestActivity"/>
+            <activity android:name=".ui.CrashActivity"/>
         </application>
 </manifest>

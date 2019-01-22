@@ -20,4 +20,9 @@ public class ConstantUtil {
      * 权限请求的request
      */
     public static final int PERMISSION_REQUEST = 0x01;
+
+    /***
+     * crashbean　
+     */
+    public static final String CRASH_BEAN = "crashbean";
 }
