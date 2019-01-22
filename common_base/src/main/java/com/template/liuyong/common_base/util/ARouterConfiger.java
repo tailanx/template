@@ -37,6 +37,11 @@ public interface ARouterConfiger {
     String STRAREGY_PATTERN = "/center/StrategyPatternActivity";
 
     /**
+     * 测试
+     */
+    String ACTIVITY_TEST= "/test/Activity";
+
+    /**
      * 主页面
      */
     String MAINACTIITY = "/app/MainActivity";

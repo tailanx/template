@@ -60,7 +60,9 @@ public class PatternActivity extends BaseActivity implements RecyclerCallBack {
             case 1:
                 ARouterUtil.getActivity(ARouterConfiger.STRAREGY_PATTERN);
                 break;
-
+            case 2:
+                ARouterUtil.getActivity(ARouterConfiger.ACTIVITY_TEST);
+                break;
             default:
                 break;
         }

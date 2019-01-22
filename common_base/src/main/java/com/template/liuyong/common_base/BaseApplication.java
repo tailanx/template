@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.orhanobut.logger.Logger;
+import com.template.liuyong.common_base.util.UncatchExceptionimpl;
 
 /**
  * @author 创建人 liuyong
@@ -22,6 +23,7 @@ public class BaseApplication extends Application {
         super.onCreate();
         initRouter();
         initLogger();
+        UncatchExceptionimpl.getInstance().init(this);
     }
 
     private void initLogger(){
