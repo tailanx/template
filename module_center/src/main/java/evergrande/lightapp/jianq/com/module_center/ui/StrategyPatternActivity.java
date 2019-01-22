@@ -5,6 +5,12 @@ import com.template.liuyong.common_base.ui.BaseActivity;
 import com.template.liuyong.common_base.util.ARouterConfiger;
 
 import evergrande.lightapp.jianq.com.module_center.R;
+import evergrande.lightapp.jianq.com.module_center.pattern.strategy.Duck;
+import evergrande.lightapp.jianq.com.module_center.pattern.strategy.Fly;
+import evergrande.lightapp.jianq.com.module_center.pattern.strategy.FlyAbleA;
+import evergrande.lightapp.jianq.com.module_center.pattern.strategy.NothingVoice;
+import evergrande.lightapp.jianq.com.module_center.pattern.strategy.RedDuck;
+import evergrande.lightapp.jianq.com.module_center.pattern.strategy.Voice;
 
 /**
  * @author 创建人 liuyong
@@ -18,6 +24,7 @@ import evergrande.lightapp.jianq.com.module_center.R;
  */
 @Route(path = ARouterConfiger.STRAREGY_PATTERN)
 public class StrategyPatternActivity extends BaseActivity {
+
     @Override
     public int getView() {
         return R.layout.activity_strategy;
@@ -26,5 +33,10 @@ public class StrategyPatternActivity extends BaseActivity {
     @Override
     public void initView() {
         setHeadline(R.string.pattern_strategy);
+        Voice voice  = new NothingVoice();
+        Fly fly = new FlyAbleA();
+        Duck duck = new RedDuck(fly,voice);
+        duck.cry(this);
     }
+
 }

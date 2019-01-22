@@ -43,4 +43,27 @@
         \n4 针对交互对象之间的耦合设计。\n5 对扩展开发，对修改关闭。\n6 依赖抽象，而不依赖具体的类 </string>
 
     <string name="pattern_strategy">策略模式</string>
+    <string name="pattern_observer">观察者模式</string>
+    <string name="pattern_decoration">装饰器模式</string>
+
+    <string name="straregy_tip">
+        遵守3种设计原则：\n
+        1 将变化的提取出来。\n
+        2 针对接口编程，不针对具体的实现。\n
+        3 使用组合，不使用继承。\n
+        将算法封装起来，不同的类型，使用不同的算法。（例如"车，有很多种，不同类型的车，一个人（有一个），可以开各种不同的车。"）
+    </string>
+    <string name="observaer_tip">
+        设计原则，针对对象的松耦合设计的。\n
+        注意：所有的观察者都必须实现同一个接口，是一对多的关系
+
+    </string>
+
+    <string name="decoration_tip">
+        设计原则，针对对象的松耦合设计的。\n
+        注意：所有的观察者都必须实现同一个接口，是一对多的关系
+
+    </string>
+
+
 </resources>

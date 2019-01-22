@@ -35,6 +35,15 @@ public interface ARouterConfiger {
      * 策略模式
      */
     String STRAREGY_PATTERN = "/center/StrategyPatternActivity";
+    /**
+     * 观察者
+     */
+    String OBSERVER_PATTERN = "/center/ObservableActivity";
+    /**
+     * 装饰器
+     */
+    String DECORATION_PATTERN = "/center/DecorationActivity";
+
 
     /**
      * 主页面
